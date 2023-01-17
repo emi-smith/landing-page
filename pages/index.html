@@ -4,79 +4,184 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Landing Page</title>
+		<title>Em's Shore</title>
 		<link rel="stylesheet" href="../src/styles.css" />
 		<link rel="stylesheet" href="../src/globals.css" />
-		
+		<link rel="icon" type="image/x-icon" href="../public/assets/favicon.ico" />
 	</head>
 	<body>
-		<!-- Navbar -->
+		<!-- NAVBAR -->
 		<div class="navbar">
 			<div class="logo">
-				<img src="../public/assets/pending-logo-white.png" width="120" height="120" alt="pending logo"/>
+				<img
+					src="../public/assets/ems-shore-white.png"
+					width="180"
+					height="180"
+					alt="pending logo"
+				/>
 			</div>
-			<div class="nav-btns">
-				<div class="nav-btn">
-					<link src="/">text</link src="/">
+			<ul class="nav-btns">
+				<!-- <li class="nav-btn btn-active">
+					<a id="home" class="nav-link" href="#" src="/">Home</a>
+				</li> -->
+				<li id="products" class="nav-btn">
+					<a class="nav-link" href="#" src="/">Products</a>
+				</li>
+				<li id="about" class="nav-btn">
+					<a class="nav-link" href="#" src="/">About</a>
+				</li>
+				<li id="contact" class="nav-btn">
+					<a class="nav-link" href="#" src="/">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- PRODUCT MODAL -->
+		<div class="products-modal" id="products-id">
+			<div class="products-content">
+				<span class="close-products-btn">&times;</span>
+				<div class="placeholder-add-content"></div>
+			</div>
+		</div>
+
+		<!-- ABOUT MODAL -->
+		<div class="about-modal" id="about-id">
+			<div class="about-content">
+				<span class="close-about-btn">&times;</span>
+				<div class="placeholder-add-content"></div>
+			</div>
+		</div>
+
+		<!-- CONTACT FORM MODAL -->
+		<div class="contact-modal" id="contact-id">
+			<div class="contact-content">
+				<span class="close-contact-btn">&times;</span>
+				<div class="contact-content-left">
+					<img
+						id="contact-img"
+						src="../public/assets/product-img/purple-wrap.jpg"
+						alt="/"
+					/>
 				</div>
-				<div class="nav-btn">
-					<link src="/">text</link src="/">
-				</div>
-				<div class="nav-btn">
-					<link src="/">text</link src="/">
+				<div class="contact-content-right">
+					<form
+						action="/"
+						method="GET"
+						class="contact-form"
+						id="contact-form-id"
+					>
+						<h1>Get in touch.</h1>
+						<p>send us an email today!</p>
+						<div class="form-validation">
+							<input
+								type="text"
+								class="modal-input"
+								id="name"
+								name="name"
+								placeholder="Enter your name here."
+							/>
+							<p>Error Message</p>
+						</div>
+						<div class="form-validation">
+							<input
+								type="email"
+								class="modal-input"
+								id="email"
+								name="email"
+								placeholder="Enter your email here."
+							/>
+							<p>Error Message</p>
+						</div>
+						<div class="form-validation">
+							<input
+								type="text"
+								class="modal-input"
+								id="subject"
+								name="subject"
+								placeholder="Enter your subject here."
+							/>
+							<p>Error Message</p>
+						</div>
+						<div class="form-validation">
+							<input
+								type="text"
+								class="modal-input"
+								id="message"
+								name="message"
+								placeholder="Enter your message here."
+							/>
+							<p>Error Message</p>
+						</div>
+						<input type="Submit" class="modal-input-btn" value="Contact" />
+					</form>
 				</div>
 			</div>
 		</div>
-		<!-- Main Section -->
+
+		<!-- MAIN SECTION -->
 		<div class="main-section">
 			<div class="main">
-				<div class="main-box">
-					<h1 class="main-header">Main Header</h1>
-					<p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem incidunt corrupti ab in cum. Obcaecati perferendis assumenda necessitatibus ducimus accusamus, facilis minima reprehenderit tempore vero, natus amet mollitia sed sequi. </p>
+				<div class="main-div">
+					<div class="coming-soon-text">
+						<h2 class="coming-soon-h2">Coming Soon...</h2>
+					</div>
+					<p class="main-text">Seashore inspired handcrafted jewlery.</p>
 				</div>
-				<div>
-					<button class="main-btn">Sign up</button>
+				<div class="main-notify-form">
+					<form action="/" method="get" id="notify-email-form" class="notify-email-form">
+						<div class="notify-email-validation">
+							<input
+								type="email"
+								class="notify-email-input"
+								id="notify-list"
+								name="email"
+								placeholder="Enter your email here."
+							/>
+							<!-- <p>Error Message</p> -->
+						</div>
+						<input type="Submit" class="notify-email-btn" value="Sign Up" />
+					</form>
 				</div>
 			</div>
-			<div class="img-box">
-				<div class="img">
-					<image> Delete and add image here..</image>
+			<img class="main-img" src="../public/assets/product-img/wraps.jpg" />
+		</div>
+		<!-- COMMING SOON SECTION -->
+		<div class="coming-soon-section">
+			<!-- <div class="coming-soon-text">
+				<h2 class="">Coming Soon..</h2>
+			</div> -->
+			<div class="jewelry-img-section">
+				<div class="jewelry-img-div">
+					<img
+						class="jewelry-img"
+						src="../public/assets/product-img/leather-wraps.jpg "
+					/>
+					<p>Leather Wraps</p>
+				</div>
+				<div class="jewelry-img-div">
+					<img
+						class="jewelry-img"
+						src="../public/assets/product-img/necklaces.jpg"
+					/>
+					<p>Necklaces</p>
+				</div>
+				<div class="jewelry-img-div">
+					<img
+						class="jewelry-img"
+						src="../public/assets/product-img/layers.jpg"
+					/>
+					<p>Layers</p>
+				</div>
+				<div class="jewelry-img-div">
+					<img
+						class="jewelry-img"
+						src="../public/assets/product-img/waterproof.jpg"
+					/>
+					<p>Waterproof</p>
 				</div>
 			</div>
 		</div>
-		<!-- Card Section -->
-		<div class="card-section">
-			<h2>Another header here.</h2>
-			
-
-			<div class="card-group">
-				<div class="card">
-					<div class="card-box">
-	
-					</div>
-					<p>card 1</p>
-				</div>
-				<div class="card">
-					<div class="card-box">
-	
-					</div>
-					<p>card 2</p>
-				</div>
-				<div class="card">
-					<div class="card-box">
-	
-					</div>
-					<p>card 3</p>
-				</div>
-				<div class="card">
-					<div class="card-box">
-	
-					</div>
-					<p>card 3</p>
-			</div>
-
-		</div>
-		<!-- Grey Section -->
+		<!-- INFORMATION SECTION -->
 		<div class="grey-section">
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
@@ -86,21 +191,80 @@
 			</p>
 			<strong>- some right aligned text here.</strong>
 		</div>
-		<!-- Call to action -->
-		<div class="cta-section">
-			<div class="cta-box">
-				<div class="cta-text">
-					<h4 class="small-header">small header</h4>
-					<p class="small-text">some more text here.</p>
+		<!-- STACKED IMAGES SECTION -->
+		<div class="img-stack-section">
+			<div class="img-left-div">
+				<img
+					class="img-stack"
+					src="../public/assets/product-img/pyrite-wrap.jpg"
+				/>
+			</div>
+			<div class="img-middle-div">
+				<img
+					class="img-stack"
+					src="../public/assets/product-img/moonstone-wrap.jpg"
+				/>
+			</div>
+			<div class="img-right-div">
+				<img
+					class="img-stack"
+					src="../public/assets/product-img/white-blue-wrap.jpg"
+				/>
+			</div>
+		</div>
+
+		<!-- CALL TO ACTION SECTION -->
+		<div class="email-list-section">
+			<div class="email-list-content">
+				<div class="email-content-left">
+					<h4 class="email-header">Join our email list today</h4>
+					<p class="email-text">and never miss an update!</p>
 				</div>
-				<div>
-					<button class="cta-btn">Sign up</button>
+				<div class="email-content-right">
+					<form action="/" method="get" id="email-list-form" class="email-list-form">
+						<div class="email-list-validation">
+							<input
+								type="email"
+								class="email-list-input"
+								id="email-list"
+								name="email"
+								placeholder="Enter your email here."
+							/>
+							<!-- <p>Error Message</p> -->
+						</div>
+						<input type="Submit" class="email-list-btn" value="Sign Up" />
+					</form>
 				</div>
 			</div>
 		</div>
-		<!-- Footer -->
+		<!-- FOOTER -->
 		<div class="footer">
-			<p>copyright and text here</p>
+			<div class="footer-social-links">
+				<img
+					alt="/"
+					src="../public/assets/social-icons/mail-line.svg"
+					class="fa fa-email"
+				></img>
+				<img
+					alt="/"
+					src="../public/assets/social-icons/instagram-line.svg"
+					class="fa fa-instagram"
+				></img>
+				<img
+					alt="/"
+					src="../public/assets/social-icons/twitter-line.svg"
+					class="fa fa-twitter"
+				></img>
+				<img
+					alt="/"
+					src="../public/assets/social-icons/linkedin-fill.svg"
+					class="fa fa-linkedin"
+				></img>
+			</div>
+			<div class="footer-copywrite">
+				<p>Copywrite © 2023 ES, All rights reserved.</p>
+			</div>
 		</div>
+		<script src="../src/app.js"></script>
 	</body>
 </html>
